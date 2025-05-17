@@ -8,22 +8,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">Sea<span>Fresh</span></div>
-                <ul class="nav-links">
-                    <li><a href="#about">Tentang Kami</a></li>
-                    <li><a href="#problem-solution">Masalah & Solusi</a></li>
-                    <li><a href="#products">Produk</a></li>
-                    <li><a href="#case-study">Studi Kasus</a></li>
-                    <li><a href="#contact">Kontak</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">Sea<span>Fresh</span></div>
+            <div class="sidebar-subtitle">Marketplace Ikan Segar & Olahan</div>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="#about"><i class="fas fa-info-circle"></i> Tentang Kami</a></li>
+            <li><a href="#problem-solution"><i class="fas fa-lightbulb"></i> Masalah & Solusi</a></li>
+            <li><a href="#goals"><i class="fas fa-rocket"></i> Tujuan</a></li>
+            <li><a href="#process"><i class="fas fa-cogs"></i> Proses</a></li>
+            <li><a href="#products"><i class="fas fa-fish"></i> Produk</a></li>
+            <li><a href="#competitor-analysis"><i class="fas fa-chart-bar"></i> Analisis Kompetitor</a></li>
+            <li><a href="#marketing-plan"><i class="fas fa-bullhorn"></i> Rencana Pemasaran</a></li>
+            <li><a href="#business-model"><i class="fas fa-briefcase"></i> Business Model Canvas</a></li>
+            <li><a href="#order-flowchart"><i class="fas fa-project-diagram"></i> Alur Pemesanan</a></li>
+            <li><a href="#dashboard-analytics"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="#case-study"><i class="fas fa-book"></i> Use Case</a></li>
+            <li><a href="#prototype"><i class="fas fa-mobile-alt"></i> Prototype</a></li>
+            <li><a href="#team"><i class="fas fa-users"></i> Tim Kami</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Kontak</a></li>
+        </ul>
+    </div>
+<div class="main-content">
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
@@ -68,7 +77,7 @@
     </section>
 
     <!-- Goals Section -->
-    <section class="goals">
+    <section class="goals" id="goals">
         <div class="container">
             <h2 class="section-title">Tujuan Kami</h2>
             <div class="goals-grid">
@@ -92,7 +101,7 @@
     </section>
 
     <!-- Process Section -->
-    <section class="process">
+    <section class="process" id="process">
         <div class="container">
             <h2 class="section-title">Proses Kami</h2>
             <div class="process-steps">
@@ -127,7 +136,7 @@
             <div class="product-grid">
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Ikan Segar">
+                        <img src="img/ikan.jpg" alt="Ikan Segar">
                     </div>
                     <div class="product-info">
                         <h3>Ikan Segar</h3>
@@ -136,20 +145,11 @@
                 </div>
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Frozen Food">
-                    </div>
-                    <div class="product-info">
-                        <h3>Frozen Food</h3>
-                        <p>Berbagai olahan beku berbahan dasar ikan</p>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Produk Olahan">
+                        <img src="img/kerupuk.jpg" alt="Produk Olahan">
                     </div>
                     <div class="product-info">
                         <h3>Produk Olahan</h3>
-                        <p>Abon ikan, kerupuk ikan, dan berbagai olahan lainnya</p>
+                        <p>Abon ikan, kerupuk ikan, frozen food dan berbagai olahan lainnya</p>
                     </div>
                 </div>
                 <div class="product-card">
@@ -166,677 +166,657 @@
     </section>
 
     <!-- Competitor Analysis Section -->
-<section class="competitor-analysis">
-    <div class="container">
-        <h2 class="section-title">Analisis Kompetitor</h2>
-        
-        <div class="table-responsive">
-            <table class="competitor-table">
-                <thead>
-                    <tr>
-                        <th>Kompetitor</th>
-                        <th>Kelebihan</th>
-                        <th>Kekurangan</th>
-                        <th>Positioning SeaFresh</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>TaniHub (Seafood)</td>
-                        <td>Jaringan luas, sistem logistik kuat</td>
-                        <td>Fokus utama masih di sayur & produk pertanian</td>
-                        <td>Fokus khusus pada ikan & olahan di Sulsel</td>
-                    </tr>
-                    <tr>
-                        <td>eFishery Fresh</td>
-                        <td>Teknologi untuk budidaya ikan, supply ke restoran besar</td>
-                        <td>Tidak langsung menyasar rumah tangga, lebih ke B2B</td>
-                        <td>B2C langsung ke konsumen rumah tangga</td>
-                    </tr>
-                    <tr>
-                        <td>Marketplace Umum (Shopee, Tokopedia)</td>
-                        <td>Banyak pilihan produk</td>
-                        <td>Kurang personalisasi, produk olahan lokal susah ditemukan</td>
-                        <td>Segmentasi lokal, personalisasi tinggi</td>
-                    </tr>
-                    <tr>
-                        <td>Pasar Tradisional Online</td>
-                        <td>Harga kompetitif, sudah ada loyal customer</td>
-                        <td>Tidak ada fitur edukasi (resep sehat, info gizi)</td>
-                        <td>Diferensiasi lewat edukasi & pemberdayaan</td>
-                    </tr>
-                </tbody>
-            </table>
+    <section class="competitor-analysis" id="competitor-analysis">
+        <div class="container">
+            <h2 class="section-title">Analisis Kompetitor</h2>
+            
+            <div class="table-responsive">
+                <table class="competitor-table">
+                    <thead>
+                        <tr>
+                            <th>Kompetitor</th>
+                            <th>Kelebihan</th>
+                            <th>Kekurangan</th>
+                            <th>Positioning SeaFresh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>TaniHub (Seafood)</td>
+                            <td>Jaringan luas, sistem logistik kuat</td>
+                            <td>Fokus utama masih di sayur & produk pertanian</td>
+                            <td>Fokus khusus pada ikan & olahan di Sulsel</td>
+                        </tr>
+                        <tr>
+                            <td>eFishery Fresh</td>
+                            <td>Teknologi untuk budidaya ikan, supply ke restoran besar</td>
+                            <td>Tidak langsung menyasar rumah tangga, lebih ke B2B</td>
+                            <td>B2C langsung ke konsumen rumah tangga</td>
+                        </tr>
+                        <tr>
+                            <td>Marketplace Umum (Shopee, Tokopedia)</td>
+                            <td>Banyak pilihan produk</td>
+                            <td>Kurang personalisasi, produk olahan lokal susah ditemukan</td>
+                            <td>Segmentasi lokal, personalisasi tinggi</td>
+                        </tr>
+                        <tr>
+                            <td>Pasar Tradisional Online</td>
+                            <td>Harga kompetitif, sudah ada loyal customer</td>
+                            <td>Tidak ada fitur edukasi (resep sehat, info gizi)</td>
+                            <td>Diferensiasi lewat edukasi & pemberdayaan</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>
-</section>
-
-
-
+    </section>
 
     <!-- Marketing Section -->
-    <section class="marketing-plan">
-  <div class="container">
-    <h2 class="section-title">Rencana Pemasaran</h2>
-    
-    <div class="marketing-tables">
-      <!-- Target Market Table -->
-      <div class="marketing-table target-market">
-        <h3><i class="fas fa-bullseye"></i> Target Pasar</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Segmentasi</th>
-              <th>Deskripsi</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Rumah Tangga</td>
-              <td>Keluarga di Sulawesi Selatan dengan konsumsi ikan tinggi</td>
-            </tr>
-            <tr>
-              <td>Masyarakat Urban</td>
-              <td>Konsumen perkotaan yang peduli pola makan sehat</td>
-            </tr>
-            <tr>
-              <td>Pelaku Bisnis</td>
-              <td>Restoran dan usaha kuliner yang butuh pasokan ikan segar</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      
-      <!-- Promotion Strategy Table -->
-      <div class="marketing-table promotion-strategy">
-        <h3><i class="fas fa-chart-line"></i> Strategi Promosi</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Metode</th>
-              <th>Implementasi</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Digital Marketing</td>
-              <td>Iklan di Instagram, Google, dan TikTok</td>
-            </tr>
-            <tr>
-              <td>Influencer/KOL</td>
-              <td>Kolaborasi dengan content creator lokal</td>
-            </tr>
-            <tr>
-              <td>Promo & Diskon</td>
-              <td>Program referral dan paket khusus</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    
-    <!-- Budget Allocation -->
-    <div class="budget-allocation">
-      <h3><i class="fas fa-money-bill-wave"></i> Alokasi Budget</h3>
-      <div class="budget-bars">
-        <div class="budget-item" style="--percentage: 40%">
-          <div class="budget-label">Digital Ads (40%)</div>
-          <div class="budget-bar"></div>
+    <section class="marketing-plan" id="marketing-plan">
+        <div class="container">
+            <h2 class="section-title">Rencana Pemasaran</h2>
+            
+            <div class="marketing-tables">
+                <div class="marketing-table target-market">
+                    <h3><i class="fas fa-bullseye"></i> Target Pasar</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Segmentasi</th>
+                                <th>Deskripsi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Rumah Tangga</td>
+                                <td>Keluarga di Sulawesi Selatan dengan konsumsi ikan tinggi</td>
+                            </tr>
+                            <tr>
+                                <td>Masyarakat Urban</td>
+                                <td>Konsumen perkotaan yang peduli pola makan sehat</td>
+                            </tr>
+                            <tr>
+                                <td>Pelaku Bisnis</td>
+                                <td>Restoran dan usaha kuliner yang butuh pasokan ikan segar</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="marketing-table promotion-strategy">
+                    <h3><i class="fas fa-chart-line"></i> Strategi Promosi</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Metode</th>
+                                <th>Implementasi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Digital Marketing</td>
+                                <td>Iklan di Instagram, Google, dan TikTok</td>
+                            </tr>
+                            <tr>
+                                <td>Influencer/KOL</td>
+                                <td>Kolaborasi dengan content creator lokal</td>
+                            </tr>
+                            <tr>
+                                <td>Promo & Diskon</td>
+                                <td>Program referral dan paket khusus</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="budget-allocation">
+                <h3><i class="fas fa-money-bill-wave"></i> Alokasi Budget</h3>
+                <div class="budget-bars">
+                    <div class="budget-item" style="--percentage: 40%">
+                        <div class="budget-label">Digital Ads (40%)</div>
+                        <div class="budget-bar"></div>
+                    </div>
+                    <div class="budget-item" style="--percentage: 30%">
+                        <div class="budget-label">Influencer (30%)</div>
+                        <div class="budget-bar"></div>
+                    </div>
+                    <div class="budget-item" style="--percentage: 20%">
+                        <div class="budget-label">Promo (20%)</div>
+                        <div class="budget-bar"></div>
+                    </div>
+                    <div class="budget-item" style="--percentage: 10%">
+                        <div class="budget-label">Event (10%)</div>
+                        <div class="budget-bar"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="budget-item" style="--percentage: 30%">
-          <div class="budget-label">Influencer (30%)</div>
-          <div class="budget-bar"></div>
-        </div>
-        <div class="budget-item" style="--percentage: 20%">
-          <div class="budget-label">Promo (20%)</div>
-          <div class="budget-bar"></div>
-        </div>
-        <div class="budget-item" style="--percentage: 10%">
-          <div class="budget-label">Event (10%)</div>
-          <div class="budget-bar"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- Business Model Canvas Section -->
-<section class="business-model">
-    <div class="container">
-        <h2 class="section-title">Business Model Canvas</h2>
-        
-        <div class="canvas-grid">
-            <!-- Customer Segments -->
-            <div class="canvas-card segment">
-                <div class="canvas-icon"><i class="fas fa-users"></i></div>
-                <h3>Customer Segment</h3>
-                <ul>
-                    <li>Nelayan lokal</li>
-                    <li>UMKM penghasil produk olahan</li>
-                    <li>Masyarakat yang ingin ikan segar dan produk olahan seafood</li>
-                </ul>
-            </div>
+    <section class="business-model" id="business-model">
+        <div class="container">
+            <h2 class="section-title">Business Model Canvas</h2>
             
-            <!-- Value Propositions -->
-            <div class="canvas-card value">
-                <div class="canvas-icon"><i class="fas fa-gem"></i></div>
-                <h3>Value Proposition</h3>
-                <ul>
-                    <li>Akses ikan segar dan olahan langsung dari nelayan</li>
-                    <li>Fitur edukasi berupa resep sehat dan informasi gizi</li>
-                    <li>Memutus rantai distribusi panjang</li>
-                    <li>Pemberdayaan nelayan lokal untuk meningkatkan pendapatan</li>
-                </ul>
-            </div>
-            
-            <!-- Channels -->
-            <div class="canvas-card channel">
-                <div class="canvas-icon"><i class="fas fa-bullhorn"></i></div>
-                <h3>Channels</h3>
-                <ul>
-                    <li>Aplikasi mobile</li>
-                    <li>Media sosial (Instagram, TikTok) untuk promosi</li>
-                </ul>
-            </div>
-            
-            <!-- Customer Relationships -->
-            <div class="canvas-card relationship">
-                <div class="canvas-icon"><i class="fas fa-handshake"></i></div>
-                <h3>Customer Relationship</h3>
-                <ul>
-                    <li>Personalisasi produk sesuai lokasi</li>
-                    <li>Edukasi konsumen lewat resep sehat</li>
-                    <li>Sistem rating dan feedback untuk interaksi langsung</li>
-                    <li>Program referral dan diskon untuk mempertahankan loyalitas</li>
-                </ul>
-            </div>
-            
-            <!-- Revenue Streams -->
-            <div class="canvas-card revenue">
-                <div class="canvas-icon"><i class="fas fa-money-bill-wave"></i></div>
-                <h3>Revenue Streams</h3>
-                <ul>
-                    <li>Komisi dari penjual yang menggunakan platform</li>
-                    <li>Iklan berbagai</li>
-                    <li>Layanan premium</li>
-                </ul>
-            </div>
-            
-            <!-- Key Resources -->
-            <div class="canvas-card resource">
-                <div class="canvas-icon"><i class="fas fa-boxes"></i></div>
-                <h3>Key Resource</h3>
-                <ul>
-                    <li>Platform digital (aplikasi)</li>
-                    <li>Database nelayan dan penjual lokal</li>
-                    <li>Tim teknologi dan marketing</li>
-                    <li>Konten edukatif seperti resep dan artikel gizi</li>
-                    <li>Jaringan logistik untuk pengiriman produk</li>
-                </ul>
-            </div>
-            
-            <!-- Key Activities -->
-            <div class="canvas-card activity">
-                <div class="canvas-icon"><i class="fas fa-tasks"></i></div>
-                <h3>Key Activities</h3>
-                <ul>
-                    <li>Pengembangan teknologi platform</li>
-                    <li>Pengumpulan dan penyaringan data produk</li>
-                    <li>Analisis tren pasar dan kebutuhan lokal</li>
-                    <li>Kemitraan dan promosi lokal</li>
-                </ul>
-            </div>
-            
-            <!-- Key Partnerships -->
-            <div class="canvas-card partnership">
-                <div class="canvas-icon"><i class="fas fa-link"></i></div>
-                <h3>Key Partnership</h3>
-                <ul>
-                    <li>Nelayan</li>
-                    <li>UMKM</li>
-                    <li>Mitra ekspedisi/pengiriman</li>
-                </ul>
-            </div>
-            
-            <!-- Cost Structure -->
-            <div class="canvas-card cost">
-                <div class="canvas-icon"><i class="fas fa-calculator"></i></div>
-                <h3>Cost Structure</h3>
-                <ul>
-                    <li>Biaya pengembangan aplikasi dan pemeliharaan sistem</li>
-                    <li>Anggaran promosi dan digital ads</li>
-                    <li>Operasional logistik dan pengiriman</li>
-                    <li>Gaji karyawan dan tim teknis</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Order Flowchart Section -->
-<section class="order-flowchart">
-    <div class="container">
-        <h2 class="section-title">Proses Pemesanan SeaFresh</h2>
-        <p class="flowchart-subtitle">Nikmati kemudahan memesan ikan segar dan produk olahan dalam beberapa langkah sederhana</p>
-        
-        <div class="flowchart-container">
-            <div class="flowchart-step first">
-                <div class="step-icon"><i class="fas fa-play"></i></div>
-                <div class="step-content">
-                    <h3>Mulai</h3>
-                    <p>Buka aplikasi SeaFresh</p>
-                </div>
-            </div>
-            
-            <div class="flowchart-arrow">
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            
-            <div class="flowchart-step">
-                <div class="step-icon"><i class="fas fa-map-marker-alt"></i></div>
-                <div class="step-content">
-                    <h3>Langkah 1</h3>
-                    <p>Masukkan lokasi Anda</p>
-                </div>
-            </div>
-            
-            <div class="flowchart-arrow">
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            
-            <div class="flowchart-step">
-                <div class="step-icon"><i class="fas fa-list"></i></div>
-                <div class="step-content">
-                    <h3>Langkah 2</h3>
-                    <p>Lihat produk berdasarkan kategori</p>
-                </div>
-            </div>
-            
-            <div class="flowchart-arrow">
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            
-            <div class="flowchart-step">
-                <div class="step-icon"><i class="fas fa-search"></i></div>
-                <div class="step-content">
-                    <h3>Langkah 3</h3>
-                    <p>Lihat detail produk, ulasan dan rating</p>
-                </div>
-            </div>
-            
-            <div class="flowchart-arrow">
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            
-            <div class="flowchart-step">
-                <div class="step-icon"><i class="fas fa-cart-plus"></i></div>
-                <div class="step-content">
-                    <h3>Langkah 4</h3>
-                    <p>Pilih produk yang diinginkan</p>
-                </div>
-            </div>
-            
-            <div class="flowchart-arrow">
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            
-            <div class="flowchart-step">
-                <div class="step-icon"><i class="fas fa-credit-card"></i></div>
-                <div class="step-content">
-                    <h3>Langkah 5</h3>
-                    <p>Pilih metode pembayaran</p>
-                </div>
-            </div>
-            
-            <div class="flowchart-arrow">
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            
-            <div class="flowchart-step">
-                <div class="step-icon"><i class="fas fa-check-circle"></i></div>
-                <div class="step-content">
-                    <h3>Langkah 6</h3>
-                    <p>Konfirmasi pesanan</p>
-                </div>
-            </div>
-            
-            <div class="flowchart-arrow">
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            
-            <div class="flowchart-step">
-                <div class="step-icon"><i class="fas fa-truck"></i></div>
-                <div class="step-content">
-                    <h3>Langkah 7</h3>
-                    <p>Tunggu produk dikirim oleh nelayan/mitra UMKM</p>
-                </div>
-            </div>
-            
-            <div class="flowchart-arrow">
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            
-            <div class="flowchart-step last">
-                <div class="step-icon"><i class="fas fa-flag-checkered"></i></div>
-                <div class="step-content">
-                    <h3>Selesai</h3>
-                    <p>Produk segar sampai di tangan Anda!</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Dashboard Analytics Section -->
-<section class="dashboard-analytics">
-    <div class="container">
-        <h2 class="section-title">Fitur Dashboard Berdasarkan Data</h2>
-        <p class="analytics-subtitle">Manfaatkan data real-time untuk pengambilan keputusan yang lebih baik</p>
-        
-        <div class="analytics-grid">
-            <!-- Input Data -->
-            <div class="analytics-card">
-                <div class="analytics-icon"><i class="fas fa-database"></i></div>
-                <div class="analytics-content">
-                    <h3>Input Data Dinamik</h3>
-                    <p>Data penjualan dan permintaan masuk secara otomatis dari transaksi di platform SeaFresh, memberikan update real-time tentang performa setiap produk.</p>
-                </div>
-            </div>
-            
-            <!-- KPI -->
-            <div class="analytics-card">
-                <div class="analytics-icon"><i class="fas fa-chart-line"></i></div>
-                <div class="analytics-content">
-                    <h3>Indikator Kinerja Utama (KPI)</h3>
+            <div class="canvas-grid">
+                <div class="canvas-card segment">
+                    <div class="canvas-icon"><i class="fas fa-users"></i></div>
+                    <h3>Customer Segment</h3>
                     <ul>
-                        <li>Jumlah produk terjual per minggu</li>
-                        <li>Pendapatan bulanan</li>
-                        <li>Produk paling laris</li>
-                        <li>Wilayah dengan permintaan tertinggi</li>
+                        <li>Nelayan lokal</li>
+                        <li>UMKM penghasil produk olahan</li>
+                        <li>Masyarakat yang ingin ikan segar dan produk olahan seafood</li>
+                    </ul>
+                </div>
+                
+                <div class="canvas-card value">
+                    <div class="canvas-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Value Proposition</h3>
+                    <ul>
+                        <li>Akses ikan segar dan olahan langsung dari nelayan</li>
+                        <li>Fitur edukasi berupa resep sehat dan informasi gizi</li>
+                        <li>Memutus rantai distribusi panjang</li>
+                        <li>Pemberdayaan nelayan lokal untuk meningkatkan pendapatan</li>
+                    </ul>
+                </div>
+                
+                <div class="canvas-card channel">
+                    <div class="canvas-icon"><i class="fas fa-bullhorn"></i></div>
+                    <h3>Channels</h3>
+                    <ul>
+                        <li>Aplikasi mobile</li>
+                        <li>Media sosial (Instagram, TikTok) untuk promosi</li>
+                    </ul>
+                </div>
+                
+                <div class="canvas-card relationship">
+                    <div class="canvas-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Customer Relationship</h3>
+                    <ul>
+                        <li>Personalisasi produk sesuai lokasi</li>
+                        <li>Edukasi konsumen lewat resep sehat</li>
+                        <li>Sistem rating dan feedback untuk interaksi langsung</li>
+                        <li>Program referral dan diskon untuk mempertahankan loyalitas</li>
+                    </ul>
+                </div>
+                
+                <div class="canvas-card revenue">
+                    <div class="canvas-icon"><i class="fas fa-money-bill-wave"></i></div>
+                    <h3>Revenue Streams</h3>
+                    <ul>
+                        <li>Komisi dari penjual yang menggunakan platform</li>
+                        <li>Iklan berbagai</li>
+                        <li>Layanan premium</li>
+                    </ul>
+                </div>
+                
+                <div class="canvas-card resource">
+                    <div class="canvas-icon"><i class="fas fa-boxes"></i></div>
+                    <h3>Key Resource</h3>
+                    <ul>
+                        <li>Platform digital (aplikasi)</li>
+                        <li>Database nelayan dan penjual lokal</li>
+                        <li>Tim teknologi dan marketing</li>
+                        <li>Konten edukatif seperti resep dan artikel gizi</li>
+                        <li>Jaringan logistik untuk pengiriman produk</li>
+                    </ul>
+                </div>
+                
+                <div class="canvas-card activity">
+                    <div class="canvas-icon"><i class="fas fa-tasks"></i></div>
+                    <h3>Key Activities</h3>
+                    <ul>
+                        <li>Pengembangan teknologi platform</li>
+                        <li>Pengumpulan dan penyaringan data produk</li>
+                        <li>Analisis tren pasar dan kebutuhan lokal</li>
+                        <li>Kemitraan dan promosi lokal</li>
+                    </ul>
+                </div>
+                
+                <div class="canvas-card partnership">
+                    <div class="canvas-icon"><i class="fas fa-link"></i></div>
+                    <h3>Key Partnership</h3>
+                    <ul>
+                        <li>Nelayan</li>
+                        <li>UMKM</li>
+                        <li>Mitra ekspedisi/pengiriman</li>
+                    </ul>
+                </div>
+                
+                <div class="canvas-card cost">
+                    <div class="canvas-icon"><i class="fas fa-calculator"></i></div>
+                    <h3>Cost Structure</h3>
+                    <ul>
+                        <li>Biaya pengembangan aplikasi dan pemeliharaan sistem</li>
+                        <li>Anggaran promosi dan digital ads</li>
+                        <li>Operasional logistik dan pengiriman</li>
+                        <li>Gaji karyawan dan tim teknis</li>
                     </ul>
                 </div>
             </div>
-            
-            <!-- Sales Trend -->
-            <div class="analytics-card">
-                <div class="analytics-icon"><i class="fas fa-chart-bar"></i></div>
-                <div class="analytics-content">
-                    <h3>Grafik Tren Penjualan per Produk</h3>
-                    <p>Menampilkan tren peningkatan atau penurunan penjualan kerupuk ikan, abon, dan frozen food dari waktu ke waktu.</p>
-                </div>
-            </div>
-            
-            <!-- Top Products -->
-            <div class="analytics-card">
-                <div class="analytics-icon"><i class="fas fa-star"></i></div>
-                <div class="analytics-content">
-                    <h3>Top Produk Terlaris</h3>
-                    <p>Menyoroti produk dalam kategori paling diminati oleh konsumen. Contoh: "Abon ikan Tuna" menjadi favorit selama bulan Ramadhan.</p>
-                </div>
-            </div>
-            
-            <!-- Customer Distribution -->
-            <div class="analytics-card">
-                <div class="analytics-icon"><i class="fas fa-map-marked-alt"></i></div>
-                <div class="analytics-content">
-                    <h3>Distribusi Wilayah Konsumen</h3>
-                    <p>Fitur peta menunjukkan bahwa konsumen terbanyak berasal dari kota Makassar dan Gowa, membantu UMKM fokus promosi pada area tersebut.</p>
-                </div>
-            </div>
-            
-            <!-- Recipe Response -->
-            <div class="analytics-card">
-                <div class="analytics-icon"><i class="fas fa-utensils"></i></div>
-                <div class="analytics-content">
-                    <h3>Respon Konsumen terhadap Resep</h3>
-                    <p>Dashboard menampilkan data interaksi pengguna dengan "Resep Sehat", memberikan insight tentang resep yang sering dipilih untuk menu harian.</p>
-                </div>
-            </div>
         </div>
-        
-        <div class="conclusion-card">
-            <div class="conclusion-icon"><i class="fas fa-lightbulb"></i></div>
-            <div class="conclusion-content">
-                <h3>Kesimpulan Otomatis</h3>
-                <p class="conclusion-text">"Permintaan kerupuk ikan meningkat 35% minggu ini. Fokuskan promosi di wilayah Makassar."</p>
-                <p>Sistem menampilkan ringkasan mingguan secara otomatis untuk membantu pengambilan keputusan strategis.</p>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-
-    <!-- Studi Kasus UMKM Rasa Laut - Desain Premium -->
-<section class="case-study">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Success Story</span>
-      <h2 class="section-title">Transformasi Digital UMKM Rasa Laut</h2>
-      <p class="section-subtitle">Bagaimana SeaFresh membantu meningkatkan penjualan hingga 300%</p>
-    </div>
-    
-    <div class="case-study-grid">
-      <div class="case-image">
-        <div class="image-wrapper">
-          <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="UMKM Rasa Laut">
-          <div class="image-badge">
-            <i class="fas fa-chart-line"></i> +300% Penjualan
-          </div>
-        </div>
-      </div>
-      
-      <div class="case-content">
-        <div class="case-description">
-          <p>Rasa Laut adalah UMKM pengolahan hasil laut di Sulawesi Selatan yang memproduksi abon ikan, kerupuk ikan, dan frozen food berbahan dasar hasil tangkapan nelayan lokal.</p>
-          <p>Sebelum bergabung dengan SeaFresh, produk mereka hanya dikenal di lingkungan sekitar melalui promosi dari mulut ke mulut.</p>
-        </div>
-        
-        <div class="case-stats">
-          <div class="stat-card">
-            <div class="stat-icon">
-              <i class="fas fa-coins"></i>
-            </div>
-            <div class="stat-content">
-              <div class="stat-value">3.5x</div>
-              <div class="stat-label">Peningkatan Keuntungan</div>
-            </div>
-          </div>
-          
-          <div class="stat-card">
-            <div class="stat-icon">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="stat-content">
-              <div class="stat-value">12x</div>
-              <div class="stat-label">Jangkauan Wilayah</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="benefits">
-          <h3 class="benefits-title">Manfaat yang Didapatkan</h3>
-          
-          <div class="benefit-item">
-            <div class="benefit-icon">
-              <div class="icon-circle">
-                <i class="fas fa-database"></i>
-              </div>
-            </div>
-            <div class="benefit-content">
-              <h4>Pengambilan Keputusan Berbasis Data</h4>
-              <p>Analisis performa produk membantu menentukan waktu produksi dan peluncuran produk baru</p>
-            </div>
-          </div>
-          
-          <div class="benefit-item">
-            <div class="benefit-icon">
-              <div class="icon-circle">
-                <i class="fas fa-bullseye"></i>
-              </div>
-            </div>
-            <div class="benefit-content">
-              <h4>Efisiensi Promosi</h4>
-              <p>Menargetkan wilayah dengan permintaan tinggi mengurangi biaya promosi tidak efektif</p>
-            </div>
-          </div>
-          
-          <div class="benefit-item">
-            <div class="benefit-icon">
-              <div class="icon-circle">
-                <i class="fas fa-hand-holding-usd"></i>
-              </div>
-            </div>
-            <div class="benefit-content">
-              <h4>Peningkatan Keuntungan</h4>
-              <p>Pengurangan ketergantungan pada perantara meningkatkan margin keuntungan bersih</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="case-quote">
-      <div class="quote-icon">
-        <i class="fas fa-quote-left"></i>
-      </div>
-      <blockquote>
-        "SeaFresh membuka pasar baru untuk produk kami. Dalam 3 bulan, omzet meningkat 300% tanpa perlu tambahan biaya promosi besar."
-      </blockquote>
-      <div class="quote-author">
-        <strong>Bapak Andi</strong>, Pemilik UMKM Rasa Laut
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Prototype Section -->
-<section class="prototype">
-    <div class="container">
-        <h2 class="section-title">Prototype</h2>
-
-        <div class="prototype-grid">
-            <div class="prototype-item">
-                <img src="img/1.png" alt="Prototype Halaman Utama" class="prototype-img">
-                <p class="img-caption">Loading 1</p>
-            </div>
-            <div class="prototype-item">
-                <img src="img/2.png" alt="Prototype Fitur Produk" class="prototype-img">
-                <p class="img-caption">Loading 2</p>
-            </div>
-            <div class="prototype-item">
-                <img src="img/3.png" alt="Prototype Checkout" class="prototype-img">
-                <p class="img-caption">Loading 3</p>
-            </div>
-            <div class="prototype-item">
-                <img src="img/4.png" alt="Prototype Checkout" class="prototype-img">
-                <p class="img-caption">Loading 4</p>
-            </div>
-            <div class="prototype-item">
-                <img src="img/5.png" alt="Prototype Halaman Utama" class="prototype-img">
-                <p class="img-caption">Sign 1</p>
-            </div>
-            <div class="prototype-item">
-                <img src="img/6.png" alt="Prototype Fitur Produk" class="prototype-img">
-                <p class="img-caption">Sign 2</p>
-            </div>
-            <div class="prototype-item">
-                <img src="img/7.png" alt="Prototype Checkout" class="prototype-img">
-                <p class="img-caption">Sign 3</p>
-            </div>
-            <div class="prototype-item">
-                <img src="img/8.png" alt="Prototype Checkout" class="prototype-img">
-                <p class="img-caption">Sign 4</p>
-            </div>
-            <div class="prototype-item">
-                <img src="img/9.png" alt="Prototype Checkout" class="prototype-img">
-                <p class="img-caption">Home</p>
-            </div>
-            <div class="prototype-item">
-                <img src="img/10.png" alt="Prototype Checkout" class="prototype-img">
-                <p class="img-caption">Explore</p>
-            </div>
-            <div class="prototype-item">
-                <img src="img/11.png" alt="Prototype Checkout" class="prototype-img">
-                <p class="img-caption">SeaCook</p>
-            </div>
-            <div class="prototype-item">
-                <img src="img/12.png" alt="Prototype Checkout" class="prototype-img">
-                <p class="img-caption">Cart</p>
-            </div>
-            <div class="prototype-item">
-                <img src="img/13.png" alt="Prototype Checkout" class="prototype-img">
-                <p class="img-caption">Checkout/p>
-            </div>
-            <div class="prototype-item">
-                <img src="img/14.png" alt="Prototype Checkout" class="prototype-img">
-                <p class="img-caption">Profil</p>
-            </div>
-            <div class="prototype-item">
-                <img src="img/15.png" alt="Prototype Checkout" class="prototype-img">
-                <p class="img-caption">Dashboard 1</p>
-            </div>
-            <div class="prototype-item">
-                <img src="img/16.png" alt="Prototype Checkout" class="prototype-img">
-                <p class="img-caption">Dashboard 2</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Team Section -->
-<section class="team-section">
-    <div class="container">
-        <h2 class="section-title">Team 9</h2>
-        
-        <div class="team-grid">
-            <!-- Anggota 1 -->
-            <div class="team-member">
-                <div class="member-photo">
-                    <img src="img/team1.jpg" alt="Nama Anggota 1">
+    <!-- Order Flowchart Section -->
+    <section class="order-flowchart" id="order-flowchart">
+        <div class="container">
+            <h2 class="section-title">Proses Pemesanan SeaFresh</h2>
+            <p class="flowchart-subtitle">Nikmati kemudahan memesan ikan segar dan produk olahan dalam beberapa langkah sederhana</p>
+            
+            <div class="flowchart-container">
+                <div class="flowchart-step first">
+                    <div class="step-icon"><i class="fas fa-play"></i></div>
+                    <div class="step-content">
+                        <h3>Mulai</h3>
+                        <p>Buka aplikasi SeaFresh</p>
+                    </div>
                 </div>
-                <h3 class="member-name">Muh Lutfi Fathila</h3>
-                <p class="member-role">Project Manager</p>
+                
+                <div class="flowchart-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                
+                <div class="flowchart-step">
+                    <div class="step-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="step-content">
+                        <h3>Langkah 1</h3>
+                        <p>Masukkan lokasi Anda</p>
+                    </div>
+                </div>
+                
+                <div class="flowchart-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                
+                <div class="flowchart-step">
+                    <div class="step-icon"><i class="fas fa-list"></i></div>
+                    <div class="step-content">
+                        <h3>Langkah 2</h3>
+                        <p>Lihat produk berdasarkan kategori</p>
+                    </div>
+                </div>
+                
+                <div class="flowchart-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                
+                <div class="flowchart-step">
+                    <div class="step-icon"><i class="fas fa-search"></i></div>
+                    <div class="step-content">
+                        <h3>Langkah 3</h3>
+                        <p>Lihat detail produk, ulasan dan rating</p>
+                    </div>
+                </div>
+                
+                <div class="flowchart-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                
+                <div class="flowchart-step">
+                    <div class="step-icon"><i class="fas fa-cart-plus"></i></div>
+                    <div class="step-content">
+                        <h3>Langkah 4</h3>
+                        <p>Pilih produk yang diinginkan</p>
+                    </div>
+                </div>
+                
+                <div class="flowchart-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                
+                <div class="flowchart-step">
+                    <div class="step-icon"><i class="fas fa-credit-card"></i></div>
+                    <div class="step-content">
+                        <h3>Langkah 5</h3>
+                        <p>Pilih metode pembayaran</p>
+                    </div>
+                </div>
+                
+                <div class="flowchart-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                
+                <div class="flowchart-step">
+                    <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+                    <div class="step-content">
+                        <h3>Langkah 6</h3>
+                        <p>Konfirmasi pesanan</p>
+                    </div>
+                </div>
+                
+                <div class="flowchart-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                
+                <div class="flowchart-step">
+                    <div class="step-icon"><i class="fas fa-truck"></i></div>
+                    <div class="step-content">
+                        <h3>Langkah 7</h3>
+                        <p>Tunggu produk dikirim oleh nelayan/mitra UMKM</p>
+                    </div>
+                </div>
+                
+                <div class="flowchart-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                
+                <div class="flowchart-step last">
+                    <div class="step-icon"><i class="fas fa-flag-checkered"></i></div>
+                    <div class="step-content">
+                        <h3>Selesai</h3>
+                        <p>Produk segar sampai di tangan Anda!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Analytics Section -->
+    <section class="dashboard-analytics" id="dashboard-analytics">
+        <div class="container">
+            <h2 class="section-title">Fitur Dashboard Berdasarkan Data</h2>
+            <p class="analytics-subtitle">Manfaatkan data real-time untuk pengambilan keputusan yang lebih baik</p>
+            
+            <div class="analytics-grid">
+                <div class="analytics-card">
+                    <div class="analytics-icon"><i class="fas fa-database"></i></div>
+                    <div class="analytics-content">
+                        <h3>Input Data Dinamik</h3>
+                        <p>Data penjualan dan permintaan masuk secara otomatis dari transaksi di platform SeaFresh, memberikan update real-time tentang performa setiap produk.</p>
+                    </div>
+                </div>
+                
+                <div class="analytics-card">
+                    <div class="analytics-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="analytics-content">
+                        <h3>Indikator Kinerja Utama (KPI)</h3>
+                        <ul>
+                            <li>Jumlah produk terjual per minggu</li>
+                            <li>Pendapatan bulanan</li>
+                            <li>Produk paling laris</li>
+                            <li>Wilayah dengan permintaan tertinggi</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="analytics-card">
+                    <div class="analytics-icon"><i class="fas fa-chart-bar"></i></div>
+                    <div class="analytics-content">
+                        <h3>Grafik Tren Penjualan per Produk</h3>
+                        <p>Menampilkan tren peningkatan atau penurunan penjualan kerupuk ikan, abon, dan frozen food dari waktu ke waktu.</p>
+                    </div>
+                </div>
+                
+                <div class="analytics-card">
+                    <div class="analytics-icon"><i class="fas fa-star"></i></div>
+                    <div class="analytics-content">
+                        <h3>Top Produk Terlaris</h3>
+                        <p>Menyoroti produk dalam kategori paling diminati oleh konsumen. Contoh: "Abon ikan Tuna" menjadi favorit selama bulan Ramadhan.</p>
+                    </div>
+                </div>
+                
+                <div class="analytics-card">
+                    <div class="analytics-icon"><i class="fas fa-map-marked-alt"></i></div>
+                    <div class="analytics-content">
+                        <h3>Distribusi Wilayah Konsumen</h3>
+                        <p>Fitur peta menunjukkan bahwa konsumen terbanyak berasal dari kota Makassar dan Gowa, membantu UMKM fokus promosi pada area tersebut.</p>
+                    </div>
+                </div>
+                
+                <div class="analytics-card">
+                    <div class="analytics-icon"><i class="fas fa-utensils"></i></div>
+                    <div class="analytics-content">
+                        <h3>Respon Konsumen terhadap Resep</h3>
+                        <p>Dashboard menampilkan data interaksi pengguna dengan "Resep Sehat", memberikan insight tentang resep yang sering dipilih untuk menu harian.</p>
+                    </div>
+                </div>
             </div>
             
-            <!-- Anggota 2 -->
-            <div class="team-member">
-                <div class="member-photo">
-                    <img src="img/team2.jpg" alt="Nama Anggota 2">
+            <div class="conclusion-card">
+                <div class="conclusion-icon"><i class="fas fa-lightbulb"></i></div>
+                <div class="conclusion-content">
+                    <h3>Kesimpulan Otomatis</h3>
+                    <p class="conclusion-text">"Permintaan kerupuk ikan meningkat 35% minggu ini. Fokuskan promosi di wilayah Makassar."</p>
+                    <p>Sistem menampilkan ringkasan mingguan secara otomatis untuk membantu pengambilan keputusan strategis.</p>
                 </div>
-                <h3 class="member-name">Nur Annisa Tri Rahma</h3>
-                <p class="member-role">UI/UX Designer</p>
-            </div>
-            
-            <!-- Anggota 3 -->
-            <div class="team-member">
-                <div class="member-photo">
-                    <img src="img/Atifa Aulianti Fanii.jpg" alt="Nama Anggota 3">
-                </div>
-                <h3 class="member-name">Atifa Aulianti Fani</h3>
-                <p class="member-role">Frontend Developer</p>
-            </div>
-            
-            <!-- Anggota 4 -->
-            <div class="team-member">
-                <div class="member-photo">
-                    <img src="img/team4.jpg" alt="Nama Anggota 4">
-                </div>
-                <h3 class="member-name">Arfika</h3>
-                <p class="member-role">Backend Developer</p>
-            </div>
-            
-            <!-- Anggota 5 -->
-            <div class="team-member">
-                <div class="member-photo">
-                    <img src="img/team5.jpg" alt="Nama Anggota 5">
-                </div>
-                <h3 class="member-name">Dwi Anayah Fatur</h3>
-                <p class="member-role">Quality Assurance</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- Case Study Section -->
+    <section class="case-study" id="case-study">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Success Story</span>
+                <h2 class="section-title">Transformasi Digital UMKM Rasa Laut</h2>
+                <p class="section-subtitle">Bagaimana SeaFresh membantu meningkatkan penjualan hingga 300%</p>
+            </div>
+            
+            <div class="case-study-grid">
+                <div class="case-image">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="UMKM Rasa Laut">
+                        <div class="image-badge">
+                            <i class="fas fa-chart-line"></i> +300% Penjualan
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="case-content">
+                    <div class="case-description">
+                        <p>Rasa Laut adalah UMKM pengolahan hasil laut di Sulawesi Selatan yang memproduksi abon ikan, kerupuk ikan, dan frozen food berbahan dasar hasil tangkapan nelayan lokal.</p>
+                        <p>Sebelum bergabung dengan SeaFresh, produk mereka hanya dikenal di lingkungan sekitar melalui promosi dari mulut ke mulut.</p>
+                    </div>
+                    
+                    <div class="case-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">3.5x</div>
+                                <div class="stat-label">Peningkatan Keuntungan</div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">12x</div>
+                                <div class="stat-label">Jangkauan Wilayah</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="benefits">
+                        <h3 class="benefits-title">Manfaat yang Didapatkan</h3>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <div class="icon-circle">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Pengambilan Keputusan Berbasis Data</h4>
+                                <p>Analisis performa produk membantu menentukan waktu produksi dan peluncuran produk baru</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <div class="icon-circle">
+                                    <i class="fas fa-bullseye"></i>
+                                </div>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Efisiensi Promosi</h4>
+                                <p>Menargetkan wilayah dengan permintaan tinggi mengurangi biaya promosi tidak efektif</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <div class="icon-circle">
+                                    <i class="fas fa-hand-holding-usd"></i>
+                                </div>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Peningkatan Keuntungan</h4>
+                                <p>Pengurangan ketergantungan pada perantara meningkatkan margin keuntungan bersih</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="case-quote">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <blockquote>
+                    "SeaFresh membuka pasar baru untuk produk kami. Dalam 3 bulan, omzet meningkat 300% tanpa perlu tambahan biaya promosi besar."
+                </blockquote>
+                <div class="quote-author">
+                    <strong>Bapak Andi</strong>, Pemilik UMKM Rasa Laut
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prototype Section -->
+    <section class="prototype" id="prototype">
+        <div class="container">
+            <h2 class="section-title">Prototype</h2>
+
+            <div class="prototype-grid">
+                <div class="prototype-item">
+                    <img src="img/1.png" alt="Prototype Halaman Utama" class="prototype-img">
+                    <p class="img-caption">Loading 1</p>
+                </div>
+                <div class="prototype-item">
+                    <img src="img/2.png" alt="Prototype Fitur Produk" class="prototype-img">
+                    <p class="img-caption">Loading 2</p>
+                </div>
+                <div class="prototype-item">
+                    <img src="img/3.png" alt="Prototype Checkout" class="prototype-img">
+                    <p class="img-caption">Loading 3</p>
+                </div>
+                <div class="prototype-item">
+                    <img src="img/4.png" alt="Prototype Checkout" class="prototype-img">
+                    <p class="img-caption">Loading 4</p>
+                </div>
+                <div class="prototype-item">
+                    <img src="img/5.png" alt="Prototype Halaman Utama" class="prototype-img">
+                    <p class="img-caption">Sign 1</p>
+                </div>
+                <div class="prototype-item">
+                    <img src="img/6.png" alt="Prototype Fitur Produk" class="prototype-img">
+                    <p class="img-caption">Sign 2</p>
+                </div>
+                <div class="prototype-item">
+                    <img src="img/7.png" alt="Prototype Checkout" class="prototype-img">
+                    <p class="img-caption">Sign 3</p>
+                </div>
+                <div class="prototype-item">
+                    <img src="img/8.png" alt="Prototype Checkout" class="prototype-img">
+                    <p class="img-caption">Sign 4</p>
+                </div>
+                <div class="prototype-item">
+                    <img src="img/9.png" alt="Prototype Checkout" class="prototype-img">
+                    <p class="img-caption">Home</p>
+                </div>
+                <div class="prototype-item">
+                    <img src="img/10.png" alt="Prototype Checkout" class="prototype-img">
+                    <p class="img-caption">Explore</p>
+                </div>
+                <div class="prototype-item">
+                    <img src="img/11.png" alt="Prototype Checkout" class="prototype-img">
+                    <p class="img-caption">SeaCook</p>
+                </div>
+                <div class="prototype-item">
+                    <img src="img/12.png" alt="Prototype Checkout" class="prototype-img">
+                    <p class="img-caption">Cart</p>
+                </div>
+                <div class="prototype-item">
+                    <img src="img/13.png" alt="Prototype Checkout" class="prototype-img">
+                    <p class="img-caption">Checkout</p>
+                </div>
+                <div class="prototype-item">
+                    <img src="img/14.png" alt="Prototype Checkout" class="prototype-img">
+                    <p class="img-caption">Profil</p>
+                </div>
+                <div class="prototype-item">
+                    <img src="img/15.png" alt="Prototype Checkout" class="prototype-img">
+                    <p class="img-caption">Dashboard 1</p>
+                </div>
+                <div class="prototype-item">
+                    <img src="img/16.png" alt="Prototype Checkout" class="prototype-img">
+                    <p class="img-caption">Dashboard 2</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" id="team">
+        <div class="container">
+            <div class="team-header">
+                <h1>Meet our team</h1>
+                <p class="team-subtitle">These people work on making our product best.</p>
+            </div>
+            
+            <div class="team-members">
+                <div class="team-card">
+                    <div class="member-photo">
+                        <img src="img/lutfi.jpg" alt="Muh Lutfi Fathila">
+                    </div>
+                    <div class="member-info">
+                        <h3>Muh Lutfi Fathila</h3>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="member-photo">
+                        <img src="img/nisa.jpg" alt="Nur Annisa Tri Rahma">
+                    </div>
+                    <div class="member-info">
+                        <h3>Nur Annisa Tri Rahma</h3>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="member-photo">
+                        <img src="img/atifa.png" alt="Atifa Aulianti Fani">
+                    </div>
+                    <div class="member-info">
+                        <h3>Atifa Aulianti Fani</h3>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="member-photo">
+                        <img src="img/rara.jpg" alt="Arfika">
+                    </div>
+                    <div class="member-info">
+                        <h3>Arfika</h3>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="member-photo">
+                        <img src="img/naya.jpg" alt="Dwi Anayah Fatur">
+                    </div>
+                    <div class="member-info">
+                        <h3>Dwi Anayah Fatur</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer id="contact">
@@ -858,19 +838,13 @@
                     <p><i class="fas fa-phone"></i> +62 812 3456 7890</p>
                     <p><i class="fas fa-envelope"></i> info@seafresh.id</p>
                 </div>
-                <div class="footer-section">
-                    <h3>Link Cepat</h3>
-                    <p><a href="#about" style="color: white; text-decoration: none;">Tentang Kami</a></p>
-                    <p><a href="#products" style="color: white; text-decoration: none;">Produk</a></p>
-                    <p><a href="#case-study" style="color: white; text-decoration: none;">Studi Kasus</a></p>
-                    <p><a href="#contact" style="color: white; text-decoration: none;">Kontak</a></p>
-                </div>
             </div>
             <div class="copyright">
                 <p>&copy; 2023 SeaFresh. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
+</div>
 
     <script>
         // Smooth scrolling for anchor links
@@ -909,5 +883,6 @@
         });
     });
 </script>
+
 </body>
 </html>
